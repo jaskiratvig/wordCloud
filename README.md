@@ -6,6 +6,7 @@ This project uses the Spotify API and Genius API to create a word cloud based on
 
 The following dependancies are required to run the project:
 
+* Install Golang at ``` https://golang.org/doc/install ```
 * Create a Spotify OAuth bearer token:
   * Visit ``` https://developer.spotify.com/console/get-current-user-top-artists-and-tracks/ ```
   * Under OAuth token, click the green box that says "Get Token"
