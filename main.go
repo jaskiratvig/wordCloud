@@ -134,7 +134,7 @@ func getLyrics(items interface{}) string {
 }
 
 func lyricsStringToMap(lyricsString string) map[string]int {
-	replacer := strings.NewReplacer(",", "", ".", "", ";", "", ")", "", "Intro", "", "Pre-Chorus", "", "[", "", "?", "", "]", "", "(", "", "Verse", "", "'", "")
+	replacer := strings.NewReplacer(",", "", ".", "", ";", "", ")", "", "Intro", "", "Pre-Chorus", "", "[", "", "?", "", "]", "", "(", "", "Verse", "", "'", "", "Chorus", "")
 	lyricsString = replacer.Replace(lyricsString)
 	cleanLyrics := stopwords.CleanString(lyricsString, "en", true)
 	words := strings.Fields(cleanLyrics)
